@@ -6,7 +6,7 @@ import re
 
 class BaiduSpider:
     def __init__(self):
-        self.baseurl = "https://image.baidu.com/"
+        self.baseurl = "http://www.qnzy.net/list.jsp?cItemId=44&itemId=2"
         self.headers = {"User-Agent": "Mozilla/5.0"}
 
 
@@ -17,7 +17,7 @@ class BaiduSpider:
         self.parsePage(html)
 
     def parsePage(self, html):
-        p = re.compile('<a.*?class="query-link">(.*?)</a>', re.S)
+        p = re.compile('<li.*?href.".*itemId=44">(.*?)</a>.*class="time".*?">(.*?)</span>', re.S)
         r_list = p.findall(html)
         print(r_list)
 

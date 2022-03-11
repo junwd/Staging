@@ -30,7 +30,7 @@ class Tiebasp:
         key=urllib.parse.urlencode(p)
         for i in range(begin,end+1):
             pn=(i-1)*50
-            baseurl="https://tieba.baidu.com/f?"
+            baseurl="http://www.qnzy.net/list.jsp?cItemId=44&itemId="
             url=baseurl+key+"&pn="+str(pn)
             html=self.readPage(url)
             filename = "第" + str(i) + "页数.html"
