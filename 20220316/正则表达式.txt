@@ -1,0 +1,5 @@
+<div.*?focus="" data-sl="">(.*?)<\/a>.*?<a.*?data-el="region">(.*?)<\/a>.*?<a.*?_blank">(.*?)<\/a>.*?<i> <\/i><span>(.*?)<\/span><i>(.*?)<\/i>.*?data-price=".*?"><span>(.*?)<\/span>
+
+
+
+<a.*?data-is_focus="" data-sl="">(.*?)</a>.*?<a.*?data-el="region">(.*?).*?<a.*?target="_blank">(.*?)</a>.*?<i> </i><span>(.*?)</span><i>(.*?)</i>.*?data-price=".*?"><span>(.*?)</span>
