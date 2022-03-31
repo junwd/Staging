@@ -82,7 +82,7 @@ class Lianjiaspider:
             s.append(newlist)
         print(s)
         print("页面解析成功，正在存入数据库")
-        # self.writeTomysql(s)
+        self.writeTomysql(s)
 
     def writeTomysql(self, r_list):
         c_db = "create database if not exists lianjiaspider character set utf8"
