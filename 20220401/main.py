@@ -2,6 +2,7 @@ import requests
 from lxml import etree
 import warnings
 import pymysql
+import csv
 
 
 class baiduSpider:
@@ -9,7 +10,7 @@ class baiduSpider:
         self.db = pymysql.connect(host="localhost", user="root", password="", charset="utf8")
         self.cursor = self.db.cursor()
         self.headers = {"User-Agent": "Mozilla/5.0"}
-        self.baseurl = "https://gy.fang.lianjia.com/loupan/pg"
+        self.baseurl = "https://www.liepin.com/zhaopin/?headId&currentPage="
         self.page = 1
 
     def readPage(self, url):
@@ -20,27 +21,35 @@ class baiduSpider:
 
     def paserPage(self, html):
         parsehtml = etree.HTML(html)
-        r_list = parsehtml.xpath('//div[@class="resblock-location"]/span[1]/text()')
-        r_list1 = parsehtml.xpath('//div[@class="resblock-location"]/a/text()')
-        r_list2 = parsehtml.xpath('//div[@class="main-price"]/span[1]/text()')
-        r_list3 = parsehtml.xpath('//div[@class="resblock-area"]/span/text()')
+        r_list = parsehtml.xpath('//div[@class="job-title-box"]/div[1]/text()')
+        r_list1 = parsehtml.xpath('//div[@class="job-dq-box"]/span[2]/text()')
+        r_list2 = parsehtml.xpath('//div[@class="job-detail-header-box"]/span[1]/text()')
+        r_list3 = parsehtml.xpath('//div[@class="job-labels-box"]/span[2]/text()')
         list = []
         for i in range(len(r_list1)):
             new_list = [r_list[i], r_list1[i], r_list2[i], r_list3[i]]
             list.append(new_list)
-            self.weit(list)
-
+        self.weit(list)
+        self.csv(list)
+    def csv(self,list):
+        with open("ass.csv", 'a', newline="", encoding="gb18030") as f:
+            writer = csv.writer(f)
+            writer.writerow(["职位", "地区","薪资","学历"])
+        for r_tup in list:
+            with open("ass.csv", 'a', newline="", encoding="gb18030") as f:
+                writer = csv.writer(f)
+                writer.writerow(r_tup)
 
     def weit(self, list):
-        c_db = 'create database if not exists 链家 charset utf8'
-        u_db = 'use 链家'
-        c_table = """create table if not exists lianjia(数据 int primary key auto_increment,
-                                   qqw varchar(200),
-                                   wwe varchar(200),
-                                   rre varchar(200),
-                                   ere varchar(200));
+        c_db = 'create database if not exists liepin charset utf8'
+        u_db = 'use liepin'
+        c_table = """create table if not exists lie(数据 int primary key auto_increment,
+                                   职位 varchar(200),
+                                   地区 varchar(200),
+                                   薪资 varchar(200),
+                                   学历 varchar(200));
                                """
-        ins = 'insert into lianjia(qqw,wwe,rre,ere)values(%s,%s,%s,%s)'
+        ins = 'insert into lie(职位,地区,薪资,学历)values(%s,%s,%s,%s)'
         warnings.filterwarnings('ignore')
         try:
             self.cursor.execute(c_db)
