@@ -36,10 +36,10 @@ class deins:
     def sjk(self, list):
         c_db = 'create database if not exists duo charset utf8'
         u_db = 'use duo'
-        c_table = """create table if not exists db(数据 int primary key auto_increment,
+        c_table = """create table if not exists db(编号 int primary key auto_increment,
                                     名称 varchar(100),
                                     地区 varchar(200),
-                                    地点 varchar(100));
+                                    评分 varchar(100));
                                 """
         ins = 'insert into db(名称,地区,地点)values(%s,%s,%s)'
         warnings.filterwarnings('ignore')
