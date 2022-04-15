@@ -1,0 +1,42 @@
+[INFO  - 2022-04-15T10:11:17.898Z] GhostDriver - Main - running on port 53199
+[INFO  - 2022-04-15T10:11:18.621Z] Session [645dcc90-bca4-11ec-ab79-47e8a3313c09] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2022-04-15T10:11:18.621Z] Session [645dcc90-bca4-11ec-ab79-47e8a3313c09] - page.customHeaders:  - {}
+[INFO  - 2022-04-15T10:11:18.621Z] Session [645dcc90-bca4-11ec-ab79-47e8a3313c09] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2022-04-15T10:11:18.621Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 645dcc90-bca4-11ec-ab79-47e8a3313c09
+[ERROR - 2022-04-15T10:11:19.755Z] Session [645dcc90-bca4-11ec-ab79-47e8a3313c09] - page.onError - msg: ReferenceError: Can't find variable: Audio
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2022-04-15T10:11:19.755Z] Session [645dcc90-bca4-11ec-ab79-47e8a3313c09] - page.onError - stack:
+  (anonymous function) (https://static.360buyimg.com/item/assets/oldman/wza1/aria.js?appid=bfeaebea192374ec1f220455f8d5f952:1)
+  o (https://static.360buyimg.com/item/assets/oldman/wza1/aria.js?appid=bfeaebea192374ec1f220455f8d5f952:1)
+  (anonymous function) (https://static.360buyimg.com/item/assets/oldman/wza1/aria.js?appid=bfeaebea192374ec1f220455f8d5f952:1)
+  o (https://static.360buyimg.com/item/assets/oldman/wza1/aria.js?appid=bfeaebea192374ec1f220455f8d5f952:1)
+  (anonymous function) (https://static.360buyimg.com/item/assets/oldman/wza1/aria.js?appid=bfeaebea192374ec1f220455f8d5f952:1)
+  o (https://static.360buyimg.com/item/assets/oldman/wza1/aria.js?appid=bfeaebea192374ec1f220455f8d5f952:1)
+  (anonymous function) (https://static.360buyimg.com/item/assets/oldman/wza1/aria.js?appid=bfeaebea192374ec1f220455f8d5f952:1)
+  o (https://static.360buyimg.com/item/assets/oldman/wza1/aria.js?appid=bfeaebea192374ec1f220455f8d5f952:1)
+  (anonymous function) (https://static.360buyimg.com/item/assets/oldman/wza1/aria.js?appid=bfeaebea192374ec1f220455f8d5f952:1)
+  o (https://static.360buyimg.com/item/assets/oldman/wza1/aria.js?appid=bfeaebea192374ec1f220455f8d5f952:1)
+  (anonymous function) (https://static.360buyimg.com/item/assets/oldman/wza1/aria.js?appid=bfeaebea192374ec1f220455f8d5f952:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2022-04-15T10:11:24.227Z] Session [645dcc90-bca4-11ec-ab79-47e8a3313c09] - page.onError - msg: ReferenceError: Can't find variable: Audio
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2022-04-15T10:11:24.227Z] Session [645dcc90-bca4-11ec-ab79-47e8a3313c09] - page.onError - stack:
+  (anonymous function) (https://static.360buyimg.com/item/assets/oldman/wza1/aria.js?appid=bfeaebea192374ec1f220455f8d5f952:1)
+  o (https://static.360buyimg.com/item/assets/oldman/wza1/aria.js?appid=bfeaebea192374ec1f220455f8d5f952:1)
+  (anonymous function) (https://static.360buyimg.com/item/assets/oldman/wza1/aria.js?appid=bfeaebea192374ec1f220455f8d5f952:1)
+  o (https://static.360buyimg.com/item/assets/oldman/wza1/aria.js?appid=bfeaebea192374ec1f220455f8d5f952:1)
+  (anonymous function) (https://static.360buyimg.com/item/assets/oldman/wza1/aria.js?appid=bfeaebea192374ec1f220455f8d5f952:1)
+  o (https://static.360buyimg.com/item/assets/oldman/wza1/aria.js?appid=bfeaebea192374ec1f220455f8d5f952:1)
+  (anonymous function) (https://static.360buyimg.com/item/assets/oldman/wza1/aria.js?appid=bfeaebea192374ec1f220455f8d5f952:1)
+  o (https://static.360buyimg.com/item/assets/oldman/wza1/aria.js?appid=bfeaebea192374ec1f220455f8d5f952:1)
+  (anonymous function) (https://static.360buyimg.com/item/assets/oldman/wza1/aria.js?appid=bfeaebea192374ec1f220455f8d5f952:1)
+  o (https://static.360buyimg.com/item/assets/oldman/wza1/aria.js?appid=bfeaebea192374ec1f220455f8d5f952:1)
+  (anonymous function) (https://static.360buyimg.com/item/assets/oldman/wza1/aria.js?appid=bfeaebea192374ec1f220455f8d5f952:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2022-04-15T10:11:28.753Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1650017488708
+
+  phantomjs://platform/console++.js:263 in error
