@@ -23,16 +23,16 @@ while True:
     for con in content:
         need = con.text.split('\n')
         # print(need)
-        name = need[0]
-        conni = need[2]
-        mit = need[3]
-        dein = need[:-4]
+        name = need[0]  # 岗位名称
+        conni = need[2]  # 工资
+        mit = need[3]  # 学历
+        dein = need  # 公司
         # L = [name, conni, mit[16:], dein]
-        L = [name, conni, mit[-2:], dein]
+        L = [name, conni, mit[-2:], dein[-3]]  # name, conni, mit[-2:],
         print(L)
         with open("job.csv", 'a', newline="", encoding="utf_8") as f:
             writer = csv.writer(f)
-            L = [name, conni, mit[16:], dein]
+            L = [name, conni, mit[-2:], dein[-3]]
             writer.writerow(L)
     print("第%d页成功" % i)
     i += 1
