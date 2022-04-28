@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="96a1a681-23a3-49cd-a1d3-f84f46d82334" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/Worry-free.py" beforeDir="false" afterPath="$PROJECT_DIR$/Worry-free.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/job.csv" beforeDir="false" />
-    </list>
+    <list default="true" id="96a1a681-23a3-49cd-a1d3-f84f46d82334" name="变更" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +32,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../huya" />
   </component>
   <component name="RunManager" selected="Python.Worry-free">
     <configuration name="Worry-free" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
