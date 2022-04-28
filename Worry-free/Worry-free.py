@@ -26,8 +26,9 @@ while True:
         name = need[0]
         conni = need[2]
         mit = need[3]
-        dein = need[-3]
-        L = [name, conni, mit[16:], dein]
+        dein = need[:-4]
+        # L = [name, conni, mit[16:], dein]
+        L = [name, conni, mit[-2:], dein]
         print(L)
         with open("job.csv", 'a', newline="", encoding="utf_8") as f:
             writer = csv.writer(f)
