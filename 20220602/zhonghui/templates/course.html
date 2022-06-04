@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <style>
+        @import url('/static/css/course.css');
+    </style>
+</head>
+<body>
+    <h1>教师管理</h1>
+    <table class="table table-bordered num1" >
+        <tr>
+<!--            <th>编号</th>-->
+            <th>昵称</th>
+            <th>简介</th>
+            <th>粉丝数</th>
+            <th>功能</th>
+        </tr>
+        {% for teacher in teachers %}
+            <tr>
+                <!--            <td style="width: 80px">1</td>-->
+                <td style="width: 100px">{{ teacher.nickname }}</td>
+                <td style="width: 600px;text-align: left;text-indent: 2px;">{{ teacher.introduction }}</td>
+                <td style="width: 100px;">{{ teacher.fans }}</td>
+                <td>
+                    <a href="{% url 'courses:update' teacher.nickname %}">
+                        <button type="button" class="btn btn-primary ">修改</button>
+                    </a>
+                    <a href="{% url 'courses:delete' teacher.nickname%}">
+                        <button type="button" class="btn btn-primary ">删除</button>
+                    </a>
+                </td>
+            </tr>
+        {% endfor %}
+        <tr>
+            <td colspan="5">
+                <a href="{% url 'courses:create' %}">
+                   <button type="button" class="btn btn-primary table_b">添加信息</button>
+                </a>
+            </td>
+
+        </tr>
+
+    </table>
+</body>
+</html>

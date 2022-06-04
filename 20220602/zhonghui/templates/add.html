@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+          integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background: url("/static/img/cour.png");
+        }
+
+        form {
+            width: 1020px;
+            margin: 100px auto;
+            border: 1px solid silver;
+            box-shadow: 2px 2px 4px slategray;
+            background-color: rgba(0, 0, 0, 0.3);
+            color: white;
+        }
+
+        h1 {
+            font-family: 仿宋, serif;
+            text-align: center;
+        }
+
+        hr {
+            width: 960px;
+        }
+
+        .form-group {
+            margin: 30px;
+        }
+
+        .btn {
+            width: 960px;
+            margin: 30px;
+
+        }
+    </style>
+</head>
+<body>
+<form action="{% url 'courses:create' %}" method="post">
+    {% csrf_token %}
+    <h1>添加教师</h1>
+    <hr>
+    <div class="form-group">
+        <label for="exampleInputEmail1">昵称：</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" name="nickname">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail2">简介：</label>
+        <input type="text" class="form-control" id="exampleInputEmail2" name="introduce">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail3">粉丝数：</label>
+        <input type="text" class="form-control" id="exampleInputEmail3" name="fans">
+    </div>
+    <button type="submit" class="btn btn-primary table_b">添加</button>
+</form>
+</body>
+</html>
