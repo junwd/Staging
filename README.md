@@ -43,7 +43,7 @@ https://github.com/junwd/Staging/blob/main/Download/20220305.zip?raw=true
 发布到云使用
 
 ```
-jun.free.svipss.top
+暂时没有
 ```
 
 xpath在线测试
@@ -51,3 +51,13 @@ xpath在线测试
 ```
 https://www.toolnb.com/tools/xpath.html
 ```
+
+
+
+爬虫网站练习使用
+
+```
+https://scrape.center/
+```
+
+有多个不同使用场景模拟真实爬虫环境
