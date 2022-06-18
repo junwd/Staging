@@ -1,0 +1,5 @@
+名称//h3[@class="rightTxtHead"]/a/text()
+排名//p[@class="RtCData"]/a/text()
+网站//h3[@class="rightTxtHead"]/span/text()
+反链//p[@class="RtCData"]/a/text()
+推荐//strong[@class="col-red02"]/text()
