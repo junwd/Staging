@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>豆瓣Top250数据分析</title>
+  <title>链家二手房数据</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -45,10 +45,10 @@
 
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
-          <li><a href="/index">首页<i class="la la-angle-down"></i></a></li>
+          <li class="active"><a href="/index">首页<i class="la la-angle-down"></i></a></li>
           <li><a href="/movie">数据详情</a></li>
           <li><a href="/score">统计</a></li>
-          <li class="active"><a href="/word">词云</a></li>
+          <li><a href="/word">词云</a></li>
           <li><a href="/aboutMe">关于我</a></li>
 
         </ul>
@@ -57,57 +57,68 @@
     </div>
   </header><!-- End Header -->
 
-     <!-- ======= Our Team Section ======= -->
+  <!-- ======= Our Team Section ======= -->
     <section id="team" class="team">
       <div class="container">
 
-        <div class="section-title">
-          <h1>Word Cloud</h1>
-
+        <div style="color:#FF5151" class="section-title">
+          <h2>链家数据</h2>
+          <p>应用Scrapy爬虫、Flask框架、SQLite数据库</p>
         </div>
+
+        <!-- ======= Counts Section ======= -->
+    <section class="counts section-bg">
+      <div class="container">
 
         <div class="row">
 
-
-
-          <div class="col-xl-6 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
-              <div class="pic"><img src="static/assets/img/test.jpg" class="img-fluid" alt=""></div>
-              <div style="color:#0000C6" class="member-info" >
-                <h3>数据关键字</h3>
-                <span>CTO</span>
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
+          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up">
+              <a href="/movie">
+            <div class="count-box">
+              <i class="icofont-simple-smile" style="color: #20b38e;"></i>
+              <span data-toggle="counter-up">200</span>+
+              <p>房信息</p>
             </div>
+              </a>
           </div>
 
-          <div class="col-xl-6 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              <div class="pic"><img src="static/assets/img/category.jpg" class="img-fluid" alt=""></div>
-              <div style="color:#0000C6" class="member-info">
-                <h3>分类数据</h3>
-                <span>Accountant</span>
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
+          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="200">
+              <a href="/score">
+            <div class="count-box">
+              <i class="icofont-document-folder" style="color: #c042ff;"></i>
+              <span data-toggle="counter-up">6</span>
+              <p>数据统计</p>
             </div>
+              </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="400">
+             <a href="/word">
+                <div class="count-box">
+                 <i class="icofont-live-support" style="color: #46d1ff;">词云</i>
+                <span data-toggle="counter-up">200</span>
+                 <p></p>
+                </div>
+             </a>
+          </div>
+
+          <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="600">
+            <a href="/aboutMe">
+            <div class="count-box">
+              <i class="icofont-users-alt-5" style="color: #ffb459;"></i>
+              <span data-toggle="counter-up">1</span>
+              <p>关于我</p>
+            </div>
+            </a>
           </div>
 
         </div>
 
       </div>
+    </section><!-- End Counts Section -->
+
+      </div>
     </section><!-- End Our Team Section -->
-
-
 
 
   <!-- ======= Footer ======= -->
@@ -115,7 +126,8 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; GitHub <strong><span></span></strong>大数据五班
+        <a href="https://github.com/junwd/Staging">github</a>
+         <strong><span></span></strong>大数据五班
       </div>
 
     </div>
