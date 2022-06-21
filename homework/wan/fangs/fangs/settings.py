@@ -65,8 +65,10 @@ DEFAULT_REQUEST_HEADERS = {
 ITEM_PIPELINES = {
     # 'fangs.pipelines.FangsPipeline': 300,
     # 'fangs.pipelines.FangsPipeline_mysql': 300,
-    'fangs.pipelines.FangsPipeline_SQLite': 300,
+    # 'fangs.pipelines.FangsPipeline_SQLite': 300,
     # 'fangs.pipelines.FangsPipeline_json': 300,
+    'fangs.pipelines.FangsPipeline_csv': 300,
+
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

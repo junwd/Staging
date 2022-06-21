@@ -66,7 +66,8 @@ DEFAULT_REQUEST_HEADERS = {
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     # 'chinaz.pipelines.ChinazPipeline': 300,
-    'chinaz.pipelines.ChinazPipeline_mysql': 300,
+    # 'chinaz.pipelines.ChinazPipeline_mysql': 300,
+    'chinaz.pipelines.ChinazPipeline_csv': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

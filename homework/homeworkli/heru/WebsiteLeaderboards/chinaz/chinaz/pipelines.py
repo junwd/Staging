@@ -15,6 +15,21 @@ class ChinazPipeline:
         print(item["tui"])
 
 
+import csv
+
+
+class ChinazPipeline_csv:
+    def __init__(self):
+        self.f = open("ass.csv", 'a', newline="", encoding='gb18030')
+        self.write = csv.writer(self.f)
+        self.write.writerow(["名称", "排名", "网站", "反链", "推荐"])
+
+    def process_item(self, item, spider):
+        L = [item["name"], item["pai"], item['wang'], item["fan"], item["tui"]]
+        self.write.writerow(L)
+        return item
+
+
 import warnings
 import pymysql
 

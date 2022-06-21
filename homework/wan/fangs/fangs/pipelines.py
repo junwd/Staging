@@ -22,6 +22,23 @@ class FangsPipeline:
         print(item["category"])
 
 
+
+import csv
+
+
+class FangsPipeline_csv:
+    def __init__(self):
+        self.f = open("ass.csv", 'a', newline="", encoding='gb18030')
+        self.write = csv.writer(self.f)
+        self.write.writerow(["面积", "url", "img", "地区","价格", "几室", "简介", "时间","装修", "朝向"])
+
+    def process_item(self, item, spider):
+        L = [item["id"], item["info_link"], item["pic_link"], item['cname'], item["score"], item["rated"],
+             item["introduction"], item["year_release"], item["country"], item["category"]]
+        self.write.writerow(L)
+        return item
+
+
 import warnings
 import pymysql
 
