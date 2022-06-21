@@ -7,11 +7,11 @@
 
 </head>
 <body>
-    <div id="74f71695d8194709a2d81c2ffaf969f3" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="1a92bede726d45829eab8bd49226372b" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_74f71695d8194709a2d81c2ffaf969f3 = echarts.init(
-            document.getElementById('74f71695d8194709a2d81c2ffaf969f3'), 'white', {renderer: 'canvas'});
-        var option_74f71695d8194709a2d81c2ffaf969f3 = {
+        var chart_1a92bede726d45829eab8bd49226372b = echarts.init(
+            document.getElementById('1a92bede726d45829eab8bd49226372b'), 'white', {renderer: 'canvas'});
+        var option_1a92bede726d45829eab8bd49226372b = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -50,6 +50,7 @@
         {
             "type": "bar",
             "name": "\u9762\u79ef",
+            "legendHoverLink": true,
             "data": [
                 "100",
                 "100",
@@ -62,7 +63,17 @@
                 "103",
                 "104"
             ],
+            "showBackground": false,
+            "barMinHeight": 0,
             "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
             "label": {
                 "show": true,
                 "position": "top",
@@ -87,10 +98,15 @@
         "axisPointer": {
             "type": "line"
         },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
         "textStyle": {
             "fontSize": 14
         },
-        "borderWidth": 0
+        "borderWidth": 0,
+        "padding": 5
     },
     "xAxis": [
         {
@@ -151,7 +167,7 @@
         }
     ]
 };
-        chart_74f71695d8194709a2d81c2ffaf969f3.setOption(option_74f71695d8194709a2d81c2ffaf969f3);
+        chart_1a92bede726d45829eab8bd49226372b.setOption(option_1a92bede726d45829eab8bd49226372b);
     </script>
 </body>
 </html>
