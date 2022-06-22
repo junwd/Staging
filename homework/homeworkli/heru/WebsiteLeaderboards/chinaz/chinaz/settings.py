@@ -18,6 +18,7 @@ NEWSPIDER_MODULE = 'chinaz.spiders'
 # USER_AGENT = 'chinaz (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
+FEED_EXPORT_ENCODING = "gb18030"
 ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
