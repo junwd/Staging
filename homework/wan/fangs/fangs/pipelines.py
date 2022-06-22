@@ -22,7 +22,6 @@ class FangsPipeline:
         print(item["category"])
 
 
-
 import csv
 
 
@@ -30,7 +29,7 @@ class FangsPipeline_csv:
     def __init__(self):
         self.f = open("ass.csv", 'a', newline="", encoding='gb18030')
         self.write = csv.writer(self.f)
-        self.write.writerow(["面积", "url", "img", "地区","价格", "几室", "简介", "时间","装修", "朝向"])
+        self.write.writerow(["面积", "url", "img", "地区", "价格", "几室", "简介", "时间", "装修", "朝向"])
 
     def process_item(self, item, spider):
         L = [item["id"], item["info_link"], item["pic_link"], item['cname'], item["score"], item["rated"],
@@ -81,9 +80,13 @@ class FangsPipeline_mysql:
 
 
 import sqlite3
+
+
 class FangsPipeline_SQLite:
     def __init__(self):
-        self.con = sqlite3.connect('./flask/movie.db')
+        self.con = sqlite3.connect('movie.db')
+        # 数据库存放位置，可自行移动到flask框架内，可设置路径到框架内
+        # 框架内路径为: ./flask/movie.db ,可视化路径为./目录位置
         self.cur = self.con.cursor()
         self.create_table()
 
