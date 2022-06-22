@@ -20,7 +20,7 @@ def page_draggable_layout():
         Polarcoordinatesystem(m, v)
     )
     # page.render("cs.html")
-    page.save_resize_html("cs.html",cfg_file="chart_config.json", dest="css.html")
+    page.save_resize_html("cs.html",cfg_file="chart_config.json", dest="大屏.html")
 
 if __name__ == "__main__":
     page_draggable_layout()

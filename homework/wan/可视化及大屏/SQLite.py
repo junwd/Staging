@@ -6,8 +6,9 @@ sql = 'SELECT main.movie250.cname,main.movie250.score,main.movie250.year_release
 data = cur.execute(sql)
 for i in data:
     # x=i[1]
-    y=i[1]
+    y = i[1]
     # z=i[2]
     print(y)
 cur.close()
 con.close()
+# 测试sql语句使用
