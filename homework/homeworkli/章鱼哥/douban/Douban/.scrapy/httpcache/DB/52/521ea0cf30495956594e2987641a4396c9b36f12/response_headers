@@ -1,0 +1,15 @@
+Date: Tue, 21 Jun 2022 12:54:21 GMT
+Content-Type: application/json; charset=utf-8
+X-Xss-Protection: 1; mode=block
+X-Douban-Mobileapp: 0
+Expires: Sun, 1 Jan 2006 01:00:00 GMT
+Pragma: no-cache
+Cache-Control: must-revalidate, no-cache, private
+X-Dae-App: movie
+X-Dae-Instance: default
+Set-Cookie: bid=CHeceDehJLU; Expires=Wed, 21-Jun-23 12:54:21 GMT; Domain=.douban.com; Path=/
+X-Douban-Newbid: CHeceDehJLU
+Server: dae
+Strict-Transport-Security: max-age=15552000
+X-Content-Type-Options: nosniff
+Content-Encoding: gzip
