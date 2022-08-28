@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="0d9271f0990b40348d3cc5f22c3896c1" class="chart-container" style="width:1000px; height:800px;"></div>
+    <script>
+        var chart_0d9271f0990b40348d3cc5f22c3896c1 = echarts.init(
+            document.getElementById('0d9271f0990b40348d3cc5f22c3896c1'), 'light', {renderer: 'canvas'});
+        var option_0d9271f0990b40348d3cc5f22c3896c1 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "pie",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\u5546\u6c34",
+                    "value": 37
+                },
+                {
+                    "name": "\u6682\u65e0\u6570\u636e",
+                    "value": 208
+                },
+                {
+                    "name": "\u6c11\u6c34",
+                    "value": 345
+                }
+            ],
+            "radius": [
+                "20%",
+                "50%"
+            ],
+            "center": [
+                "25%",
+                "50%"
+            ],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        },
+        {
+            "type": "pie",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\u5546\u7535",
+                    "value": 42
+                },
+                {
+                    "name": "\u6682\u65e0\u6570\u636e",
+                    "value": 207
+                },
+                {
+                    "name": "\u6c11\u7535",
+                    "value": 341
+                }
+            ],
+            "radius": [
+                "20%",
+                "50%"
+            ],
+            "center": [
+                "75%",
+                "50%"
+            ],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u5546\u6c34",
+                "\u6682\u65e0\u6570\u636e",
+                "\u6c11\u6c34",
+                "\u5546\u7535",
+                "\u6c11\u7535"
+            ],
+            "selected": {}
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    }
+};
+        chart_0d9271f0990b40348d3cc5f22c3896c1.setOption(option_0d9271f0990b40348d3cc5f22c3896c1);
+    </script>
+</body>
+</html>

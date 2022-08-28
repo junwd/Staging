@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="e4794b6d7d054f75a4a83f239d819aac" class="chart-container" style="width:1000px; height:600px;"></div>
+    <script>
+        var chart_e4794b6d7d054f75a4a83f239d819aac = echarts.init(
+            document.getElementById('e4794b6d7d054f75a4a83f239d819aac'), 'light', {renderer: 'canvas'});
+        var option_e4794b6d7d054f75a4a83f239d819aac = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "pie",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "\u5546\u6c34",
+                    "value": 37
+                },
+                {
+                    "name": "\u6682\u65e0\u6570\u636e",
+                    "value": 208
+                },
+                {
+                    "name": "\u6c11\u6c34",
+                    "value": 345
+                }
+            ],
+            "radius": [
+                "40%",
+                "75%"
+            ],
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u5546\u6c34",
+                "\u6682\u65e0\u6570\u636e",
+                "\u6c11\u6c34"
+            ],
+            "selected": {}
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    }
+};
+        chart_e4794b6d7d054f75a4a83f239d819aac.setOption(option_e4794b6d7d054f75a4a83f239d819aac);
+    </script>
+</body>
+</html>
